@@ -1,0 +1,13 @@
+
+
+<div class="convertor-card">
+  <div class="base">
+    <span class="name">Enter a number:</span>
+    <input type="number" id="numberInput" [(ngModel)]="inputValue" />
+    <button (click)="convertToText()">Convert</button>
+  </div>
+
+  <div *ngIf="convertedText" class="converted">
+    <p>{{ convertedText }}</p>
+  </div>
+</div>
